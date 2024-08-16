@@ -706,31 +706,33 @@
                     <p>jayadevnair05@gmail.com</p>
                   </div>
                 </div><!-- End Info Item -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d251482.5759647517!2d76.13612123967098!3d9.982516031000996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d514abec6bf%3A0xbd582caa5844192!2sKochi%2C%20Kerala!5e0!3m2!1sen!2sin!4v1723549666335!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe class="w-75" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d251482.5759647517!2d76.13612123967098!3d9.982516031000996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d514abec6bf%3A0xbd582caa5844192!2sKochi%2C%20Kerala!5e0!3m2!1sen!2sin!4v1723549666335!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
   
             <div class="col-lg-7">
-             <form action="https://api.web3forms.com/submit" method="POST" id="form" class="bg-light p-4 p-md-5 contact-form"> 
+              <form action="https://api.web3forms.com/submit" method="POST" id="form" class="bg-light p-4 p-md-5 contact-form"> 
+
+                <input type="hidden" name="apikey" value="17d270e4-f8e9-4cf7-a796-9d2e591a1eb1">
  
-                            <div class="form-group"> 
-                                <input type="hidden" name="access_key" value="7d090993-99f0-45d5-9b1f-35e0bee97360"> 
-                                <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" onclick="return validateName()" required onkeyup="validateForm()"/> 
-                                <span id="name_error" class="text-danger"></span> 
-                            </div> 
-                            <div class="form-group"> 
-                                <input type="email" id="email" name="email" class="form-control" placeholder="Your Email" onclick="return validateEmail()" required onkeyup="validateForm()"/> 
-                                <span id="email_error" class="text-danger"></span> 
-                            </div> 
-                            <div class="form-group"> 
-                                <textarea id="message" name="message" cols="30" rows="7" class="form-control" placeholder="Message" onclick="return validateMessage()" required onkeyup="validateForm()"></textarea> 
-                                <span id="message_error" class="text-danger"></span> 
-                            </div> 
-                            <div class="form-group"> 
-                                <input type="submit" id="btn-click" value="Send Message" class="btn btn-primary py-3 px-5" onclick="return validateForm()" required onkeyup="validateForm()"/> 
-                                <span id="submit_error" class="text-danger"></span> 
-                            </div> 
-                        </form>
+                <div class="form-group my-3"> 
+                    <input type="hidden" name="access_key" value="7d090993-99f0-45d5-9b1f-35e0bee97360"> 
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" onclick="return validateName()" required onkeyup="validateForm()"/> 
+                    <span id="name_error" class="text-danger"></span> 
+                </div> 
+                <div class="form-group my-3"> 
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Your Email" onclick="return validateEmail()" required onkeyup="validateForm()"/> 
+                    <span id="email_error" class="text-danger"></span> 
+                </div> 
+                <div class="form-group my-3"> 
+                    <textarea id="message" name="message" cols="30" rows="7" class="form-control" placeholder="Message" onclick="return validateMessage()" required onkeyup="validateForm()"></textarea> 
+                    <span id="message_error" class="text-danger"></span> 
+                </div> 
+                <div class="form-group"> 
+                    <input type="submit" id="btn-click" value="Send Message" class="btn btn-primary py-3 px-5" onclick="return validateForm()" required onkeyup="validateForm()"/> 
+                    <span id="submit_error" class="text-danger"></span> 
+                </div> 
+            </form>
             </div><!-- End Contact Form -->
   
           </div>
@@ -804,5 +806,6 @@
           })
       })
   </script>
+  <script src="assets/js/send.js"  ></script>
   </body>
 </html>
